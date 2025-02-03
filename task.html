@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            transition: all;
+        }
+        .content:hover ~ img{
+            transform: scale(1.1);
+            transition: 2s;
+        }
+        .content-1:hover ~ img{
+            transform: rotate(180deg);
+            transition: 2s;
+        }
+        .content-2:hover ~ img{
+            transform: translate(100px,100px);
+            transition: 2s;
+        }
+        .content-3:hover ~ img{
+            transform: skew(10deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <button class="content-2">Translate</button>
+        <button class="content-1">Rotate</button>
+        <button class="content">scale</button>
+        <button class="content-3">skew</button><br>
+    <img src="ather 2.webp">
+</div>
+</body>
+</html>
