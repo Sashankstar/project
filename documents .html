@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+      .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .dropdown-content li a:hover {
+      background-color: red;
+    }
+    .dropdown-content li a {
+      /* color: white; */
+      padding: 12px 16px;
+      display: block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      /* background-color: #333; */
+      /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+      /* min-width: 160px; */
+      /* z-index: 5; */
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .menu-items li a:hover {
+      /* background-color: #555; */
+      border-radius: 4px;
+    }
+    
+    .menu-items li a {
+      color: black;
+      font-size: 12px;
+      text-decoration: none;
+      padding: 50px 30px;
+      transition: background-color 0.3s ease;
+    }
+    .menu-items li {
+      position: relative;
+      top: 10px;
+    }
+    .menu-items {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      gap: 10px;
+    }
+    .main{
+        display:grid;
+        grid-template-columns:auto auto auto auto auto auto auto;
+        width: 700px;
+        margin-left: 20px;
+    }
+    h1{
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <ul class="menu-items">
+        <img src="https://media.atherenergy.com/ather-logo.svg" width="80px" height="50px">
+        <li><a href="#">Rizta</a></li>
+        <li><a href="#">Ather450</a></li>
+        <li><a href="#">450Apex</a></li>
+        <li class="dropdown">
+          <a href="#">investors Relationship<span class="dropdown-symbol">&#9660;</span></a>
+          <ul class="dropdown-content">
+            <li style="list-style-type: none;"><a href="#">
+                <p>other Documentation</p>
+              </a></li>
+            <li style="list-style-type: none;"><a href="#">Financial</a></li>
+            <li style="list-style-type: none;"><a href="#">Goverance</a></li>
+            <li style="list-style-type: none;"><a href="#">ESG</a></li>
+            <li style="list-style-type: none;"><a href="#">Contact Details</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Smarthealmet&Accessories</a></li>
+        <li><a href="#">Locate us</a></li>
+      </ul><hr>
+      <div class="main">
+      <p>investor relation</p>
+      <p>Offer Documents</p>
+      <p>Financals</p>
+      <p>Goverance</p>
+      <p>Esg</p>
+      <p>Contact Details</p>
+      </div><hr>
+    </nav>
+    <h1>Offer Documents</h1>
+    <!-- <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                style="background: none;box-shadow: none;">
+                Do I need a Drivers’ License, Helmet and Registration to use an electric scooter?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                An Ather electric scooter is subject to the same Central & State road safety laws as any other scooter.
+                Therefore, yes, a valid drivers’ license, registration & helmet are absolutely mandatory for riding an
+                Ather Electric Scooter.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+    <!-- <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div> -->
+       <div class="feed-4" style="border: 10px;">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" style="background:none; box-shadow: none;">
+                Draft Red Herring Prospectus (DRHP)
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Ather DRHP
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                style="background: none;box-shadow: none;">
+                Can I use an electric scooter if I live in an apartment?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes. You just need a 5 amp socket at your parking slot. You can conveniently charge your Ather EV with the
+                portable charger at all apartments with a basic electricity connection in the parking area.
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
