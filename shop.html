@@ -7,7 +7,11 @@
     <style>
         .main{
             display:grid;
-            grid-template-columns:repeat(7,auto);
+            grid-template-columns:repeat(8,auto);
+        }
+        .main-1{
+            display:grid;
+            grid-template-columns:  450px 450px 450px 400px 400px 450px 450px 450px;
         }
         .demo{
              width:33vw;
@@ -32,6 +36,9 @@
         }
         .demo-1:hover{
             background-image: url("spare\ 2.webp");
+        }
+        .demo-1:hover >.pas{
+            display: block;
         }
         .demo-2{
             width:33vw;
@@ -59,6 +66,9 @@
         .demo-3:hover{
             background-image: url(spare-6);
         }
+        .demo-3:hover >.pas{
+            display: block;
+        }
         .demo-4{
             width:33vw;
              height: 90vh;
@@ -83,7 +93,9 @@
         }
         .demo-5:hover{
             background-image: url(spare-10);
-
+        }
+        .demo-5:hover >.pas{
+            display: block;
         }
         .demo-6{
             width:33vw;
@@ -103,36 +115,202 @@
 
         .pas{
             display: none;
+            width: 420px;
+            height: 50px;
+            margin-top: 100%;
+            margin-left: 2px;
         }
         .demo-6:hover >.pas{
             display: block;
         }
+        .demo-7{
+            width:33vw;
+             height:90vh;
+             border-radius: 10px;
+            background-image: url(scotter.jpg);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            transition:background-image 2s ease-in;
+            margin: 5px;
+        }
+        .demo-7:hover{
+            background-image: url(sco.webp);
+        }
+        .select{
+            width: 100px;
+            height: 50px;
+            border-radius: 200px;
+        }
+        .btn1{
+            width: 100px;
+            height: 50px;
+            border-radius: 200px;
+            background-color: white;
+        }
+        .btn2{
+            width: 100px;
+            height: 50px;
+            border-radius: 200px;
+            background-color: white;
+        }
+        .btn3{
+            width: 100px;
+            height: 50px;
+            border-radius: 200px;
+            background-color: white;
+        }
+
     </style>
 </head>
 <body>
     <nav>
-        <img src="https://cdn.shopify.com/s/files/1/0681/6353/5146/files/Ather_Shop.svg?v=1699440965" alt="">
-        
+        <div style="display: flex;justify-content: space-evenly; ">
+            <img src="https://cdn.shopify.com/s/files/1/0681/6353/5146/files/Ather_Shop.svg?v=1699440965" alt="">
+            <h1>Accessories</h1>
+        </div>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="https://cdn.shopify.com/videos/c/o/v/2a8c07c6c03d4a77ac38ae28c665c3b6.mp4" type="video/mp4">
+            </video>
+        </div>
     </nav>
-    <div class="main-1">
     <div class="main">
     <div class="demo" >
     </div>
     <div class="demo-1" >
+        <button class="pas">
+            quick add 🛒
+        </button>
     </div>
     <div class="demo-2">
     </div>
     <div class="demo-3">
-    </div>
+        <button class="pas">
+            quick add 🛒
+        </button></div>
     <div class="demo-4">
     </div>
-    <div class="demo-5"></div>
+    <div class="demo-5">
+        <button class="pas">
+            quick add 🛒
+        </button>
+    </div>
     <div class="demo-6">
          <button class="pas">
-        quick add
+        quick add 🛒
     </button></div>
     <div class="demo-7"></div>
     </div>
+    <div class="main-1">
+        <div>
+            <p>Ritaz Bodyguard</p>
+            <p>₹ 3499</p>
+        </div>
+        <div >
+        <p>Ather 450-Throttle Grip Cover</p>
+        <p>₹ 299</p>
+
     </div>
+    <div>
+        <p>Ritaz Back Rest</p>
+        <p>₹ 1499</p>
+    </div>
+    <div>
+        <p>Tyre inflator</p>
+        <p>₹ 2999</p>
+    </div>
+    <div>
+        <p>Ritaz Frunk</p>
+        <p>₹ 2499</p>
+    </div>
+    <div>
+        <p>Ather 450 -Scotter Cover</p>
+        <p>₹ 999</p>
+    </div>
+    <div>
+        <p>Ather Care Kit </p>
+        <p>₹ 799</p>
+    </div>
+    <div>
+        <p>Rizta Scooter Cover</p>
+        <p>₹ 999</p>
+    </div>
+    </div>
+    <h1>Choose your upgrade</h1>
+    <div class="main-2">
+        <select class="select">
+            <option value="Bestselling">Bestselling</option>
+            <option value="Featured">Featured</option>
+            <option value="Price:High to Low">Price:High to low</option>
+            <option value="Price:Low to High">Price:Low to High</option>
+            <option value="Latest">Latest</option>
+        </select>
+            <button class="btn1">450</button>
+            <button class="btn2">Apex</button>
+            <button class="btn3">Rizta</button>
+        </div>
+        <div>
+            <div class="main">
+                <div class="demo" >
+                </div>
+                <div class="demo-1" >
+                    <button class="pas">
+                        quick add 🛒
+                    </button>
+                </div>
+                <div class="demo-2">
+                </div>
+                <div class="demo-3">
+                    <button class="pas">
+                        quick add 🛒
+                    </button></div>
+                <div class="demo-4">
+                </div>
+                <div class="demo-5">
+                    <button class="pas">
+                        quick add 🛒
+                    </button>
+                </div>
+                <div class="demo-6">
+                     <button class="pas">
+                    quick add 🛒
+                </button></div>
+                <div class="demo-7"></div>
+                </div>
+                <div class="main-1">
+                    <div>
+                        <p>Ritaz Bodyguard</p>
+                        <p>₹ 3499</p>
+                    </div>
+                    <div >
+                    <p>Ather 450-Throttle Grip Cover</p>
+                    <p>₹ 299</p>
+            
+                </div>
+                <div>
+                    <p>Ritaz Back Rest</p>
+                    <p>₹ 1499</p>
+                </div>
+                <div>
+                    <p>Tyre inflator</p>
+                    <p>₹ 2999</p>
+                </div>
+                <div>
+                    <p>Ritaz Frunk</p>
+                    <p>₹ 2499</p>
+                </div>
+                <div>
+                    <p>Ather 450 -Scotter Cover</p>
+                    <p>₹ 999</p>
+                </div>
+                <div>
+                    <p>Ather Care Kit </p>
+                    <p>₹ 799</p>
+                </div>
+                <div>
+                    <p>Rizta Scooter Cover</p>
+                    <p>₹ 999</p>
+                </div>
+        </div>
 </body>
 </html>
